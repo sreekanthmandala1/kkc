@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ipad:770px */
+        @media (max-width:770px) {
+
+            .invoiceRow {
+                background-color: rgb(255, 255, 255);
+            }
+
+            .card10007 {
+                width: 50vw;
+                position: absolute;
+                top: 9vh;
+                left: 40%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .invoiceSent {
+                position: absolute;
+                top: 22vh;
+            }
+
+            .expiredSince18Days {
+                position: absolute;
+                top: 15vh;
+                left: 30vw;
+            }
+
+            .totalDue {
+                display: flex;
+            }
+        }
+
+        /* mobile:415px */
+        @media (max-width:415px) {
+            
+            .invoiceRow {
+                /* background-color: #f4f4f4;
+                padding:3vh 3vw 7vh 5vw; */
+            }
+            .card10007Header{
+                /* background-color: rgb(255, 255, 255); */
+                
+            }
+            .card10007{
+                border:1px solid white;
+                margin-top:2vh;
+            }
+            .invoiceSent{
+                margin-top:30px;
+                color:white;
+            }
+
+            .expiredSince18Days{
+                color:white;
+                margin-top:-7px;
+            }
+            
+        }
+    </style>
+    <title>Download Invoice</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <strong>number</strong>
+            </div>
+            <div class="col-md-1">
+                <strong>customer</strong>
+            </div>
+            <div class="col-md-4">
+                <strong>invoice</strong>
+            </div>
+            <div class="col-md-1">
+                <strong>total</strong>
+            </div>
+            <div class="col-md-1">
+                <strong>due</strong>
+            </div>
+            <div class="col-md-4">
+                <strong>status</strong>
+            </div>
+        </div>
+        <div class=" card10007">
+            <div class=" card10007Header">
+                <div class="row">
+                    <div class="col-md-1">
+                        10007
+                    </div>
+                    <div class="col-md-1">
+                        poorna
+                    </div>
+                    <div class="col-md-4">
+                        12-07-2021
+                    </div>
+                    <div class="col-md-1">
+                        €20.00
+                    </div>
+                    <div class="col-md-1">
+                        €20.00
+                    </div>
+                    <div class="col-md-4">
+                        <span class="badge bg-warning text-dark">
+                            expired Since 18 Days
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-6 ">
+                <div class="invoiceRow">
+                    <div class="row ">
+                        <div class="col-md-7 ">
+                            Invoicecustomer invoice data
+                        </div>
+                        <div class="col-md-5 invoiceSent" >
+                            <span class="badge bg-success  " >
+                                invoice Sent
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            Monday, July 12, 2021(18 days ago)
+                        </div>
+                        <div class="col-md-5 ">
+                            <span class="badge bg-warning text-dark  expiredSince18Days">
+                                expired Since 18 Days
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            5 Poorna
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 totalDue">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Total(excl)
+                                </div>
+                                <div class="col-md-4">
+                                    total
+                                </div>
+                                <div class="col-md-4">
+                                    Due
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    €20.00
+                                </div>
+                                <div class="col-md-4">
+                                    €20.00
+                                </div>
+                                <div class="col-md-4">
+                                    €20.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="invoiceRow">
+
+                    <div class="row">
+                        <div class="col-md-8">
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    VAT
+                                </div>
+                                <div class="col-md-6">
+                                    amount
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            8020 sales of exports outside the EU
+                        </div>
+                        <div class="col-md-2">
+                            high
+                        </div>
+                        <div class="col-md-2">
+                            €20.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-2">
+                            €20.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 buttonsColumn">
+                <button class="btn btn-outline-primary btn-block">
+                    Send
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                    memory
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                    registerPayment
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                    modify
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                    credit
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                    copy
+                </button>
+                <button class="btn btn-outline-primary btn-block">
+                    remove
+                </button>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="../../assets/pdfImage.png">
+                    </div>
+                    <div class="col-6">
+                        <img src="../../assets/pdfImage.png">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    
+
+</body>
+
+</html>

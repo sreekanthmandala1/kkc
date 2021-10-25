@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+
+/* Media Queries@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #containerMainRow{
+    background: rgb(60,103,168); 
+    background: linear-gradient(0deg, rgba(60,103,168,1) 0%, rgba(51,15,88,1) 100%);padding:100px;height:550px;
+    height:100vh
+  }
+  #logoAndMenu{
+    display:flex;
+    flex-direction: row;
+    
+  }
+ 
+  #menuImg{
+    position: absolute;
+   right: 0;
+    width:50px;
+    height:50px;
+    top:0px;
+  }
+  
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #containerMainRow{
+    background: rgb(60,103,168); 
+    background: linear-gradient(0deg, rgba(60,103,168,1) 0%, rgba(51,15,88,1) 100%);padding:100px;height:550px;
+    height:100vh
+  }
+  #menuImg{
+    position: absolute;
+   right: 0;
+    width:50px;
+    height:50px;
+    top:10px;
+  }
+  #snelstart{
+    margin-top:10px;
+  }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #containerMainRow{
+    background: rgb(60,103,168); 
+    background: linear-gradient(0deg, rgba(60,103,168,1) 0%, rgba(51,15,88,1) 100%);padding:100px;height:550px;
+    height:100vh
+  }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #containerMainRow{
+    margin-top:100px;
+    width:50%;
+    height:50%;
+    margin-left:25%;
+  }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #createInvoiceList{
+    margin-left:50px
+  }
+
+  #mainNav{
+    position:fixed;
+    width:100%;
+    z-index:2;
+    height:75px;
+  }
+  #createInvoiceContainer{
+    margin-top:100px;
+  }
+  #invoiceLinesFlex{
+    display: flex;
+    flex-direction: row;
+  }
+  #invoiceTable{
+    margin-left:35px;
+  }
+  #invoiceLinesButton{
+    margin-left:100px;
+  }
+  #invoiceLinesItemName{
+    margin-left:80px;
+  }
+  #invoiceLinesQuantity{
+    margin-left:145px;
+  }
+  #invoiceLinesPrice{
+    margin-left:105px;
+  }
+  #invoiceLinesTotal{
+    margin-left:145px
+  }
+  #supplierDetailsKvkNumber{
+    margin-left:-10px
+  }
+  #customerPartyCity{
+    /* margin-left:270px; */
+  }
+  #customerPartyPostalCode{
+    /* margin-left:290px; */
+  }
+  #supplierDetailsButton{
+    margin-left:-15px;
+  }
+  #invoiceVersionButton{
+    margin-top:15px;
+  }
+}

@@ -1,0 +1,36 @@
+<div *ngIf="auth.user$ | async as user">
+  <!-- <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+        <img [src]="user.picture" alt="User's Profile Picture" class="rounded-circle img-fluid profile-picture" style="width: 50px;margin-left: 10px;"/>
+       <span class="caret"></span>
+    </button> -->
+  <!-- <ul class="dropdown-menu" role="menu" aria-labelledby="menu1"> -->
+  <!-- <li role="presentation">
+        
+        <a
+      routerLink="/profile"
+      class="nav-link"
+      routerLinkActive="router-link-exact-active"
+    >
+      Profile
+    </a>
+      </li> -->
+  <!-- <li role="presentation"> -->
+    <div id="imgLogout" style="display:flex;flex-direction: row;margin-top:15px">
+  <img [src]="user.picture" style="height:30px;width:30px;cursor:pointer">
+  <span><a (click)="logout()" class="nav-link" style="cursor:pointer;">
+      Logout
+    </a>
+  </span>
+</div>
+  <!-- <a role="menuitem" tabindex="-1" href="" (click)="logout()" >Logout</a> -->
+  <!-- </li> -->
+  <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li> -->
+  <!-- </ul> -->
+</div>
+<!-- <div *ngIf="auth.user$ | async as user">Pr
+    
+        <img [src]="user.picture" alt="User's Profile Picture" class="rounded-circle img-fluid profile-picture" style="width: 50px;margin-left: 10px;"/>
+     
+</div> -->

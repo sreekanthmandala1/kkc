@@ -1,0 +1,23 @@
+<div class="text-center" *ngIf="(auth.isAuthenticated$ | async) == false">
+
+
+
+    <div class="row" id="containerMainRow">
+
+        
+            <!-- style="background: rgb(60,103,168); -->
+            <!-- background: linear-gradient(0deg, rgba(60,103,168,1) 0%, rgba(51,15,88,1) 100%);padding:100px;height:550px" -->
+            <div class="col-12" id="containerColumn">
+                <app-main-page></app-main-page>
+                <div id="snelstartDiv">
+                    <button (click)="loginWithRedirect()" class="btn btn-info col-10 mt-3"
+                        id="snelstartText">Snelstart</button>
+                </div>
+            </div>
+        
+
+    </div>
+</div>
+<div *ngIf="(auth.isAuthenticated$ | async) == true">
+    <app-create-invoice></app-create-invoice>
+</div>

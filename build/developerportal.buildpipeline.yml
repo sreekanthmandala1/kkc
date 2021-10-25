@@ -1,0 +1,39 @@
+trigger:
+    batch: true
+    branches:
+        include:
+        - master
+        - develop
+        - feature/*
+    paths:
+        include:
+            - /TackApp/DeveloperPortal
+pool:
+  name: Azure Pipelines
+  vmImage: vs2017-win2016
+  demands: npm
+
+steps:
+- task: Npm@1
+  displayName: 'npm install'
+  inputs:
+    workingDir: TackApp\DeveloperPortal
+    verbose: false
+
+- task: Npm@1
+  displayName: 'npm run build prod'
+  inputs:
+    command: custom
+    workingDir: TackApp\DeveloperPortal
+    verbose: true
+    customCommand: 'run build'
+
+- task: ArchiveFiles@2
+  displayName: 'Archive TackApp\DeveloperPortal'
+  inputs:
+    rootFolderOrFile: TackApp/DeveloperPortal/dist
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    artifactName: drop

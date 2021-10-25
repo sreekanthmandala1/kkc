@@ -1,0 +1,40 @@
+<div>
+  <div class="row">
+    
+
+    <div class="col-12" id="bgSocial">
+      <!-- style="box-shadow: 2px 2px 4px 2px  #888888;;margin-top:5vh;height:70vh;background: rgb(60,103,168);
+    background: linear-gradient(0deg, rgba(60,103,168,1) 0%, rgba(51,15,88,1) 100%);" -->
+      <div class="row" >
+        <div class="col-12">
+          <app-nav-bar></app-nav-bar>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h5 style="color:#fff" >SignIn with social Account</h5>
+        </div>
+      </div>
+      <div>
+        <div class="row" >
+          <div class="col-12">
+            <app-facebook-login></app-facebook-login>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <app-google-login></app-google-login>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button (click)="microsoftSignInn()" class="btn btn-danger col-10 mt-3" id="microsoft"
+              >Microsoft</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>

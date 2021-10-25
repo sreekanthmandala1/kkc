@@ -1,0 +1,6 @@
+{
+    "domain": "snelstart-test.eu.auth0.com",
+    "clientId": "iutTzzwh0FktQPpzzkQX5bnLJvMKJ5G6",
+    "audience": "https://webapi-tst.snelstart.nl",
+    "apiUrl": "http://localhost:7000"
+  }
