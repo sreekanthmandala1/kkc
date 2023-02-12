@@ -57,7 +57,7 @@
     "ng-drag-drop": "^5.0.0",
     "ng-sidebar": "^9.4.2",
     "ngx-bootstrap": "^7.1.0",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
